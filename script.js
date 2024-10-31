@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
@@ -16,7 +16,7 @@
         });
     });
 
-     const contactForm = document.querySelector('.contact-form');
+    const contactForm = document.querySelector('.contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -26,9 +26,9 @@
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
-             alert(`Thank you, ${name}! Your message has been sent.\n\nEmail: ${email}\nMessage: ${message}`);
+            alert(`Thank you, ${name}! Your message has been sent.\n\nEmail: ${email}\nMessage: ${message}`);
 
-             contactForm.reset();
+            contactForm.reset();
         });
     }
 });
